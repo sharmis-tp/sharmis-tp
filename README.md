@@ -1,17 +1,22 @@
-<div align="center">
-
 # sharmis-tp
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg" alt="Rust logo" width="64" height="64" />
+<div align="center">
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg" alt="Rust" width="64"/>
 
 ### Rust · Systems Engineering · Blockchain Infrastructure
 
 **Engineering for correctness, predictable performance, and clearly defined failure modes.**
 
-[![Rust](https://img.shields.io/badge/Rust-systems%20engineering-000000?style=flat-square&logo=rust&logoColor=white)](https://www.rust-lang.org/)
-[![Solana](https://img.shields.io/badge/Solana-on--chain%20programs-242038?style=flat-square)](https://solana.com/)
-[![Async](https://img.shields.io/badge/Async-Tokio%20%2F%20futures-234a73?style=flat-square)](https://tokio.rs/)
-[![GitHub](https://img.shields.io/badge/GitHub-sharmis--tp-181717?style=flat-square&logo=github)](https://github.com/sharmis-tp)
+[![Rust](https://img.shields.io/badge/Rust-Systems_Engineering-CE422B?style=flat-square&logo=rust&logoColor=white)](https://www.rust-lang.org/)
+[![Solana](https://img.shields.io/badge/Solana-On--Chain_Programs-242038?style=flat-square)](https://solana.com/)
+[![Tokio](https://img.shields.io/badge/Async-Tokio_%2F_Futures-234a73?style=flat-square)](https://tokio.rs/)
+
+<p align="center">
+  <a href="https://github.com/sharmis-tp"><img src="https://komarev.com/ghpvc/?username=sharmis-tp&label=PROFILE%20VIEWS&color=CE422B&style=for-the-badge" alt="Profile Views" height="28"/></a>
+  &nbsp;
+  <a href="https://github.com/sharmis-tp?tab=followers"><img src="https://img.shields.io/github/followers/sharmis-tp?style=for-the-badge&logo=github&logoColor=white&label=FOLLOWERS&labelColor=24292F&color=CE422B" alt="Followers" height="28"/></a>
+</p>
 
 </div>
 
@@ -19,103 +24,101 @@
 
 ## `whoami`
 
-I'm a software engineer focused on **Rust, distributed systems, and blockchain infrastructure**, with experience working across on-chain programs, networked services, runtime integration, and full-stack applications.
+I'm a software engineer focused on **Rust, distributed systems, and blockchain infrastructure**, working across on-chain programs, networked services, runtime integration, and full-stack applications.
 
-My interest in Rust goes beyond writing code that passes the borrow checker. I care about the contracts a system must preserve: who owns each resource, where state can change, what happens under cancellation or partial failure, which operations can block, and how the implementation behaves at its boundaries.
+My interest in Rust goes beyond satisfying the borrow checker. I care about the contracts a system must preserve: resource ownership, state transitions, cancellation and partial failure, and well-defined behavior at system boundaries.
 
 ```rust
-// The questions I ask before optimizing a system:
+// Questions worth answering before optimizing a system:
 //
 // 1. What invariants must always hold?
 // 2. Where are ownership and mutation boundaries?
 // 3. What can fail, block, panic, or be cancelled?
 // 4. Where are allocations, copies, and contention introduced?
-// 5. How do we test the failure paths, not just the happy path?
+// 5. How are failure paths tested?
 ```
 
 ## Rust engineering: areas of focus
 
-| Area | What matters in practice |
+| Area | Engineering considerations |
 | :--- | :--- |
-| **Ownership & lifetimes** | Explicit resource ownership, borrowing, API lifetimes, interior mutability, and avoiding unnecessary cloning |
-| **Type-driven design** | Newtypes, enums, traits, generics, state transitions, domain invariants, and errors that callers can act on |
-| **Async & concurrency** | Futures, Tokio, task lifecycles, cancellation safety, `Send`/`Sync`, backpressure, and bounded concurrency |
-| **Memory & performance** | Allocation behavior, layout, zero-copy trade-offs, profiling, benchmarking, and avoiding premature `unsafe` |
-| **FFI & low-level interfaces** | ABI boundaries, raw pointers, layout assumptions, lifetime contracts, and keeping unsafe surface area small |
-| **Protocol engineering** | Serialization formats, deterministic execution, versioning, replay resistance, transaction semantics, and failure recovery |
-| **Reliability** | Structured errors, tracing, property-based thinking, reproducible tests, adversarial inputs, and observability |
+| **Ownership & lifetimes** | Borrowing, API lifetimes, interior mutability, resource management |
+| **Type-driven design** | Newtypes, enums, traits, generics, domain invariants |
+| **Async & concurrency** | Futures, Tokio, cancellation safety, `Send`/`Sync`, backpressure |
+| **Memory & performance** | Memory layout, allocations, profiling, zero-copy trade-offs |
+| **FFI & systems** | ABI contracts, raw pointers, safe abstractions around `unsafe` |
+| **Protocol engineering** | Deterministic execution, serialization, transaction semantics |
+| **Reliability** | Structured errors, tracing, reproducible tests, failure recovery |
 
 ## Selected repositories
 
-These links are a **curated view of repositories available on this GitHub account**, not a claim of sole authorship or upstream maintainership. For a precise record of individual contributions, check commit history and pull requests.
+A curated selection of repositories on this account. Individual contribution and authorship history can be inspected in their commits and pull requests.
 
-| Repository | Technical area |
+| Repository | Technical focus |
 | :--- | :--- |
-| [**Dbgeng-sys**](https://github.com/sharmis-tp/Dbgeng-sys) | Rust bindings and systems-level interoperability around Windows debugging interfaces |
-| [**napi-rs**](https://github.com/sharmis-tp/napi-rs) | Rust ↔ Node.js native module interfaces and language boundaries |
-| [**raydium-cp-swap**](https://github.com/sharmis-tp/raydium-cp-swap) | Solana AMM program architecture, account constraints, and token accounting |
-| [**whirlpool-tx-replayer**](https://github.com/sharmis-tp/whirlpool-tx-replayer) | Replaying and inspecting concentrated-liquidity transaction behavior |
-| [**agave**](https://github.com/sharmis-tp/agave) | Solana validator/runtime architecture and transaction execution |
-| [**ic**](https://github.com/sharmis-tp/ic) | Internet Computer canister/runtime and distributed protocol architecture |
-| [**subtensor**](https://github.com/sharmis-tp/subtensor) | Substrate-based protocol logic and on-chain state transitions |
-| [**hyperbridge**](https://github.com/sharmis-tp/hyperbridge) | Cross-chain messaging and interoperability architecture |
+| [Dbgeng-sys](https://github.com/sharmis-tp/Dbgeng-sys) | Rust FFI and Windows debugging interfaces |
+| [napi-rs](https://github.com/sharmis-tp/napi-rs) | Rust–Node.js native bindings |
+| [raydium-cp-swap](https://github.com/sharmis-tp/raydium-cp-swap) | Solana AMM program architecture |
+| [whirlpool-tx-replayer](https://github.com/sharmis-tp/whirlpool-tx-replayer) | Concentrated liquidity and transaction replay |
+| [agave](https://github.com/sharmis-tp/agave) | Solana validator and runtime architecture |
+| [ic](https://github.com/sharmis-tp/ic) | Internet Computer canister infrastructure |
+| [subtensor](https://github.com/sharmis-tp/subtensor) | Substrate runtime and state transitions |
+| [hyperbridge](https://github.com/sharmis-tp/hyperbridge) | Cross-chain interoperability |
 
-## How I approach system design
+## Engineering philosophy
 
 ### 01 / Make invalid states difficult to represent
 
-Prefer domain types over loosely coupled primitive values. Model lifecycle transitions explicitly, separate validation from execution, and make trust boundaries visible in function signatures.
+Use domain types rather than loosely coupled primitives. Model state transitions explicitly and make trust boundaries visible in function signatures.
 
-### 02 / Treat concurrency as a resource-management problem
+### 02 / Treat concurrency as resource management
 
-Async code is not automatically scalable. I pay attention to task ownership, bounded work queues, cancellation, timeouts, contention, shutdown semantics, and whether synchronous work is accidentally blocking the executor.
+Async does not automatically mean scalable. Task ownership, cancellation, bounded queues, timeouts, contention, and graceful shutdown all matter.
 
-### 03 / Establish a safety boundary before crossing it
+### 03 / Make unsafe boundaries explicit
 
-`unsafe` is a tool for expressing guarantees the compiler cannot verify—not a performance switch. The objective is a small, documented, auditable unsafe boundary with safe abstractions around it. FFI deserves the same scrutiny for ownership, aliasing, layout, and unwind behavior.
+`unsafe` is not a performance switch. Keep unsafe surfaces small, document their invariants, and expose safe abstractions wherever possible.
 
-### 04 / Optimize only after characterizing the workload
+### 04 / Measure before optimizing
 
-I distinguish throughput from tail latency, measure allocation and copying costs, and benchmark realistic inputs. Fewer allocations are not automatically a win if the result increases complexity, contention, or maintenance risk.
+Distinguish throughput from tail latency. Profile allocation behavior, copying, and contention using realistic workloads before choosing a more complex implementation.
 
-### 05 / Design protocols around adversarial inputs and partial failure
+### 05 / Engineer for adversarial conditions
 
-For on-chain and distributed systems, the hard parts are state transitions, authority, replay protection, idempotency, consistency, serialization compatibility, and recovery when a step is interrupted.
+In distributed systems and blockchains, correctness depends on authority boundaries, replay resistance, idempotency, consistent state transitions, and failure recovery.
 
-## Where Rust meets blockchain
+## Rust × Blockchain
 
-My technical interests span:
+- **Solana / Anchor:** PDAs, CPIs, account validation, token programs, deterministic state transitions, compute budgets.
+- **Internet Computer:** Rust canisters, Candid, ledger interfaces, state upgrades, inter-canister calls.
+- **Substrate:** Runtime modules, storage models, dispatch logic, transaction weights.
+- **Cross-chain systems:** Message validation, finality assumptions, settlement and trust models.
 
-- **Solana / Anchor:** PDAs, account validation, CPI boundaries, token programs, deterministic state transitions, compute budgets, and transaction replay considerations.
-- **Internet Computer:** Rust canisters, Candid interfaces, ledger integration, upgrade-safe state, and asynchronous inter-canister calls.
-- **Substrate ecosystems:** Runtime modules, storage models, dispatch logic, weights, and chain-level invariants.
-- **Cross-chain infrastructure:** Message validation, settlement assumptions, finality, and explicit trust models.
+I approach on-chain programs as **state machines exposed to adversarial inputs**, not merely functions deployed to a blockchain.
 
-I approach smart contracts as **state machines exposed to adversarial inputs**, not just functions that happen to run on a blockchain.
+## Tooling
 
-## Tooling & adjacent stack
+`Rust` · `Cargo` · `Clippy` · `rustfmt` · `Tokio` · `Serde` · `tracing` · `Anchor` · `Solana` · `Candid` · `Linux` · `Docker`
 
-`Rust` · `Cargo` · `Clippy` · `rustfmt` · `Tokio` · `Serde` · `tracing` · `Anchor` · `Solana` · `Candid` · `Linux` · `Git` · `Docker`
+Also working across **TypeScript, Go, Python, C/C++, Move, and Solidity**.
 
-Additional experience: **TypeScript, Go, Python, C/C++, Move, Solidity**, and service/frontend integration. Rust remains the focus of this profile.
-
-## Engineering principles
+## Principles
 
 > Correctness before cleverness. Explicit invariants before abstraction. Measurement before optimization.
 
-- Keep interfaces small and failure states observable.
-- Prefer deterministic tests over assumptions about the happy path.
-- Document non-obvious ownership, lifetime, and safety contracts.
-- Make operations reproducible: pinned dependencies, automated checks, and reviewable changes.
-- Separate what a codebase demonstrates from what a project merely explores.
+- Keep safety contracts explicit.
+- Prefer deterministic and reproducible tests.
+- Make failures observable and recoverable.
+- Design for maintenance, not just initial implementation.
+- Keep the distinction between demonstrated contributions and explored technologies clear.
 
 ---
 
 <div align="center">
 
-**Interested in Rust, protocol engineering, or difficult systems problems?**
+**Rust · Protocols · Distributed Systems**
 
-[Explore repositories](https://github.com/sharmis-tp?tab=repositories) · [GitHub profile](https://github.com/sharmis-tp)
+[Explore my repositories](https://github.com/sharmis-tp?tab=repositories)
 
 <sub>Build things that remain understandable under load, under failure, and under review.</sub>
 
