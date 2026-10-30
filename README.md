@@ -1,6 +1,6 @@
 <div align="center">
 
-# sharmis-tp
+# Suzuki Taro
 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg" alt="Rust" width="64" height="64" />
 
