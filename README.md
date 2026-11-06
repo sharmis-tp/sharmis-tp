@@ -6,11 +6,6 @@
 
 **Correctness by design. Performance by measurement. Reliability under pressure.**
 
-[![Rust](https://img.shields.io/badge/Rust-Systems_Programming-CE422B?style=flat-square&logo=rust&logoColor=white)](https://www.rust-lang.org/)
-[![Tokio](https://img.shields.io/badge/Async-Tokio_%2F_Futures-24292F?style=flat-square)](https://tokio.rs/)
-[![Linux](https://img.shields.io/badge/Linux-Tooling-24292F?style=flat-square&logo=linux&logoColor=white)](https://kernel.org/)
-[![GitHub](https://img.shields.io/badge/GitHub-sharmis--tp-24292F?style=flat-square&logo=github&logoColor=white)](https://github.com/sharmis-tp)
-
 <p align="center">
   <a href="https://github.com/sharmis-tp" title="Profile views">
     <img src="https://komarev.com/ghpvc/?username=sharmis-tp&label=PROFILE%20VIEWS&color=CE422B&style=for-the-badge" alt="Profile views" height="28" />
