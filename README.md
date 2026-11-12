@@ -1,20 +1,20 @@
 <div align="center">
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg" alt="Rust" width="64" height="64" />
+### Senior Rust Engineer · AI/ML Infrastructure
 
-### Rust · Systems Programming · Distributed Systems
+**The systems layer under machine learning: training libraries, checkpoints, agent evaluation and LLM observability.**
 
-**Correctness by design. Performance by measurement. Reliability under pressure.**
-
-<p align="center">
-  <a href="https://github.com/sharmis-tp" title="Profile views">
-    <img src="https://komarev.com/ghpvc/?username=sharmis-tp&label=PROFILE%20VIEWS&color=CE422B&style=for-the-badge" alt="Profile views" height="28" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/sharmis-tp?tab=followers" title="Followers">
-    <img src="https://img.shields.io/github/followers/sharmis-tp?style=for-the-badge&logo=github&logoColor=white&label=FOLLOWERS&labelColor=24292F&color=CE422B" alt="GitHub followers" height="28" />
-  </a>
+<p>
+  <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/OpenTelemetry-425CC7?style=flat-square&logo=opentelemetry&logoColor=white" alt="OpenTelemetry" />
+  <img src="https://img.shields.io/badge/Tokio-000000?style=flat-square&logo=rust&logoColor=white" alt="Tokio" />
 </p>
+
+<a href="https://github.com/sharmis-tp?tab=followers"><img src="https://img.shields.io/github/followers/sharmis-tp?style=flat-square&label=followers&color=CE422B" alt="followers" /></a>
+<a href="mailto:sharmis.tp@gmail.com"><img src="https://img.shields.io/badge/email-sharmis.tp%40gmail.com-24292F?style=flat-square&logo=gmail&logoColor=white" alt="email" /></a>
+<img src="https://img.shields.io/badge/open_to-remote_work_(US_timezones)-2ea44f?style=flat-square" alt="open to remote work" />
 
 </div>
 
@@ -22,76 +22,70 @@
 
 ## `whoami`
 
-I'm a software engineer focused on **Rust, systems programming, async services, and performance-conscious backend architecture**.
+I've been building software since 2018, most of it in **Rust**: async services, FFI, memory allocators and protocol code that has to stay correct under load.
 
-I care about more than getting code past the borrow checker. I care about the guarantees behind it: **who owns a resource, which invariants hold across a state transition, what cancellation leaves behind, and how a service behaves when something fails at the worst possible moment.**
+Today I work where that background matters most in AI: **the infrastructure that models and agents run on.** That means numerical correctness in training code, checkpoints that survive a crash, evaluation scores you can trust, and traces that tell you why an agent did what it did.
 
-> I borrow ideas. I own results.
+> Models are only as reliable as the systems that train, evaluate and serve them.
 
-## Areas of depth
+## What I work on
 
-| Domain | What I pay attention to |
+| Area | What I focus on |
 | :--- | :--- |
-| **Ownership & lifetimes** | Borrowing, API lifetime design, interior mutability, move semantics, resource lifecycles |
-| **Type-driven APIs** | Traits, generics, enums, newtypes, typestate, errors that express actionable failure |
-| **Async & concurrency** | Tokio, futures, `Send` / `Sync`, task supervision, cancellation safety, backpressure |
-| **Memory & performance** | Heap allocation, cache behavior, memory layout, benchmarks, zero-copy trade-offs |
-| **FFI & unsafe Rust** | ABI compatibility, raw pointers, aliasing, safety invariants, safe public wrappers |
-| **Networking & protocols** | Framing, parsing, versioning, timeouts, connection lifecycle, partial I/O |
-| **Production reliability** | Tracing, structured errors, graceful shutdown, deterministic tests, fault isolation |
+| **Training library internals** | Optimizer math (RMSprop variance, epsilon placement), weight initialization (Kaiming/Xavier), RNN input validation, numerically stable edge cases |
+| **Checkpointing & data integrity** | Atomic checkpoint writes, batched tensor serialization, verified dataset downloads |
+| **Agent evaluation** | Scoring and weighting of eval dimensions |
+| **LLM observability** | OpenTelemetry spans for agent and tool events, error capture in LangChain tracing, token-usage parsing |
+| **Forecasting & anomaly detection** | Exogenous-feature support in time-series foundation-model pipelines |
+| **Systems foundations** | Tokio, cancellation safety, backpressure, zero-copy I/O, FFI and `unsafe` audits |
 
-## The engineering questions I ask
+## Open-source work in AI/ML
 
-```rust
-// Before adding a new abstraction or optimizing a hot path:
-//
-// 1. Which invariants must remain true?
-// 2. Who owns the data, and how long must it live?
-// 3. Can this operation block, panic, or be cancelled?
-// 4. Is concurrency bounded? Where is backpressure applied?
-// 5. Which allocations or copies are actually measurable?
-// 6. How will failure be observed, reproduced, and recovered?
-```
+All links go to my own pull requests.
 
-## Selected repositories
+**Merged**
 
-These are **Rust and systems-oriented codebases available on my account**. Some may be forks or explorations; the repository history is the source of truth for individual contributions.
-
-| Repository | What makes it technically interesting |
+| Project | Contribution |
 | :--- | :--- |
-| [**Dbgeng-sys**](https://github.com/sharmis-tp/Dbgeng-sys) | Low-level Rust bindings, foreign interfaces, ABI considerations |
-| [**napi-rs**](https://github.com/sharmis-tp/napi-rs) | Rust ↔ Node.js FFI, ownership across language boundaries |
-| [**swc**](https://github.com/sharmis-tp/swc) | High-performance parsing, transforms, compiler infrastructure |
-| [**deno**](https://github.com/sharmis-tp/deno) | Rust runtime architecture, asynchronous I/O, developer tooling |
-| [**cross**](https://github.com/sharmis-tp/cross) | Rust cross-compilation and reproducible build environments |
-| [**slint**](https://github.com/sharmis-tp/slint) | Native UI systems, declarative components, Rust integration |
+| [**FastNN**](https://github.com/CanReader/FastNN): neural-network library in Rust + CUDA | [Reject zero-length sequences in LSTM/GRU with a clear message](https://github.com/CanReader/FastNN/pull/78) |
+| | [Verify MNIST download integrity before using a cached file](https://github.com/CanReader/FastNN/pull/72) |
+| [**jamjet**](https://github.com/jamjet-labs/jamjet): safety layer for AI agents | [Fix `DimensionScores.composite()` weight normalization](https://github.com/jamjet-labs/jamjet/pull/176) |
+| | [Add OpenTelemetry span attributes for coordinator and agent-tool events](https://github.com/jamjet-labs/jamjet/pull/197) |
 
-## How I build systems
+**In review**
 
-**01 — Make invariants visible.** Prefer expressive types, explicit state transitions, and narrow interfaces over comments that merely ask callers to be careful.
+| Project | Contribution |
+| :--- | :--- |
+| [**FastNN**](https://github.com/CanReader/FastNN) | [Fix centered RMSprop: clamp variance, move eps outside sqrt](https://github.com/CanReader/FastNN/pull/73) |
+| | [Atomic checkpoint writes](https://github.com/CanReader/FastNN/pull/74) · [Batch tensor I/O in checkpoint serialization](https://github.com/CanReader/FastNN/pull/76) |
+| | [Assert `fan_in > 0` in Kaiming/Xavier init](https://github.com/CanReader/FastNN/pull/77) |
+| [**foundationforecast**](https://github.com/TimeCopilot/foundationforecast): time-series foundation models | [Accept `X_df` and `futr_exog_list` in `detect_anomalies`](https://github.com/TimeCopilot/foundationforecast/pull/82) |
+| [**lemma**](https://github.com/uselemma/lemma): LLM tracing | [Record handled LangChain tool errors as span errors](https://github.com/uselemma/lemma/pull/137) |
+| [**oxtrace**](https://github.com/aashrith/oxtrace): LLM usage tracing | [Parse usage from gzip-encoded responses](https://github.com/aashrith/oxtrace/pull/23) |
+| [**runanywhere-sdks**](https://github.com/RunanywhereAI/runanywhere-sdks): on-device AI SDKs | [Typecheck core test files](https://github.com/RunanywhereAI/runanywhere-sdks/pull/1159) |
 
-**02 — Treat async as a resource-management problem.** Spawned tasks still need owners. Queues need limits. Cancellation, timeouts, and graceful shutdown should be intentional.
+## Systems & distributed work
 
-**03 — Keep unsafe code small and auditable.** `unsafe` does not switch off correctness requirements; it transfers the obligation to document and uphold them.
+Merged contributions to [**py-libp2p**](https://github.com/libp2p/py-libp2p/pulls?q=author%3Asharmis-tp), [**papi-console**](https://github.com/polkadot-api/papi-console/pulls?q=author%3Asharmis-tp) (Polkadot), [**circom**](https://github.com/project-llzk/circom/pulls?q=author%3Asharmis-tp), [**beancount-language-server**](https://github.com/polarmutex/beancount-language-server/pulls?q=author%3Asharmis-tp), [**perun-ckb-backend**](https://github.com/perun-network/perun-ckb-backend/pulls?q=author%3Asharmis-tp), [**uor-addr**](https://github.com/UOR-Foundation/uor-addr/pulls?q=author%3Asharmis-tp) and [**metal2vk**](https://github.com/joshuaswarren/metal2vk/pulls?q=author%3Asharmis-tp).
 
-**04 — Profile before optimizing.** Throughput, tail latency, allocations, and contention matter more than assumptions about what "should" be faster.
+Own repositories: [smalloc](https://github.com/sharmis-tp/smalloc) (memory allocator for Solana programs), [Dbgeng-sys](https://github.com/sharmis-tp/Dbgeng-sys) (Rust FFI bindings for the Windows debugger engine), [Solana-Credit-Score](https://github.com/sharmis-tp/Solana-Credit-Score), [AsyncCSVX](https://github.com/sharmis-tp/AsyncCSVX).
 
-**05 — Test the failure paths.** Validate malformed inputs, partial reads, retries, timeouts, state recovery, and boundary conditions—not just successful execution.
+## How I work
 
-## Tools & technologies
+**01. Measure, then optimize.** Throughput, tail latency and allocations, not guesses.
 
-`Rust` · `Cargo` · `rustfmt` · `Clippy` · `Tokio` · `Serde` · `tracing` · `Linux` · `Git` · `Docker` · `CI`
+**02. Make failure boring.** Writes are atomic, inputs are validated at the boundary, and errors say what to do next.
 
-Also comfortable working across language boundaries with **C/C++, TypeScript, Go, and Python**.
+**03. Trust numbers only when they're tested.** An eval score or a loss curve is only as good as the code that computes it.
+
+**04. Small, reviewable changes.** Every PR above is scoped to one problem and easy to review.
 
 ---
 
 <div align="center">
 
-**Rust · Reliable Software · Thoughtful Systems Design**
+**Open to remote roles and contracts with AI/ML startups: ML infrastructure, inference, evaluation and Rust performance work.**
 
-[Explore repositories](https://github.com/sharmis-tp?tab=repositories)
-
-<sub>Build software that stays understandable under load, under failure, and under review.</sub>
+[sharmis.tp@gmail.com](mailto:sharmis.tp@gmail.com)
 
 </div>
