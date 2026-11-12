@@ -86,6 +86,4 @@ Own repositories: [smalloc](https://github.com/sharmis-tp/smalloc) (memory alloc
 
 **Open to remote roles and contracts with AI/ML startups: ML infrastructure, inference, evaluation and Rust performance work.**
 
-[sharmis.tp@gmail.com](mailto:sharmis.tp@gmail.com)
-
 </div>
