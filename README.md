@@ -42,7 +42,7 @@ Today I work where that background matters most in AI: **the infrastructure that
 
 ## Open-source contributions
 
-All links go to my own pull requests. 55+ merged across 30+ repositories.
+All links go to my own pull requests. 56+ merged across 30+ repositories.
 
 ### AI/ML & agent infrastructure
 
@@ -64,6 +64,7 @@ All links go to my own pull requests. 55+ merged across 30+ repositories.
 | :--- | :--- | :---: |
 | [**grafana/dataViz**](https://github.com/grafana/dataViz): Grafana ECharts plugin monorepo | [Guard non-string config.src in getLayerSrc](https://github.com/grafana/dataViz/pull/201) · [Replace untracked plan file references](https://github.com/grafana/dataViz/pull/200) | in review |
 | [**grafana-pyroscope-datasource**](https://github.com/grafana/grafana-pyroscope-datasource) | [Fix multi-value template variable regex](https://github.com/grafana/grafana-pyroscope-datasource/pull/113) | in review |
+| [**screenpipe/screenpipe**](https://github.com/screenpipe/screenpipe): AI screen recording | [Raise read-pool acquire_timeout above busy_timeout](https://github.com/screenpipe/screenpipe/pull/7931) | merged |
 | [**getsentry/sentry-go**](https://github.com/getsentry/sentry-go): Sentry SDK for Go | [Add WithMechanism capture option](https://github.com/getsentry/sentry-go/pull/1472) | in review |
 | [**lemma**](https://github.com/uselemma/lemma): LLM tracing | [Record handled LangChain tool errors as span errors](https://github.com/uselemma/lemma/pull/137) | in review |
 | [**oxtrace**](https://github.com/aashrith/oxtrace): LLM usage tracing | [Parse usage from gzip-encoded responses](https://github.com/aashrith/oxtrace/pull/23) | in review |
@@ -88,6 +89,7 @@ All links go to my own pull requests. 55+ merged across 30+ repositories.
 
 | Project | Contribution | Status |
 | :--- | :--- | :---: |
+| [**lacs-project/sysknife**](https://github.com/lacs-project/sysknife): Linux agent control standard | [Doctor continues past missing provider key](https://github.com/lacs-project/sysknife/pull/762) | in review |
 | [**eza-community/eza**](https://github.com/eza-community/eza): modern ls replacement | [Add EZA_SIZE_STYLE env var](https://github.com/eza-community/eza/pull/1981) | in review |
 | [**beancount-language-server**](https://github.com/polarmutex/beancount-language-server): LSP for Beancount | [Advertise positionEncoding capability (LSP 3.17)](https://github.com/polarmutex/beancount-language-server/pull/971) · [Fix exit code on unclean shutdown](https://github.com/polarmutex/beancount-language-server/pull/970) | merged |
 | [**tree-sitter-beancount**](https://github.com/polarmutex/tree-sitter-beancount): grammar | [Add injections.scm for BQL query highlighting](https://github.com/polarmutex/tree-sitter-beancount/pull/164) | in review |
