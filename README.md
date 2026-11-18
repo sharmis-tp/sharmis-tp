@@ -42,14 +42,14 @@ Today I work where that background matters most in AI: **the infrastructure that
 
 ## Open-source contributions
 
-All links go to my own pull requests. 56+ merged across 30+ repositories.
+All links go to my own pull requests. 57+ merged across 37+ repositories.
 
 ### AI/ML & agent infrastructure
 
 | Project | Contribution | Status |
 | :--- | :--- | :---: |
 | [**ClickHouse/loom**](https://github.com/ClickHouse/loom): AI agent memory & observability on ClickHouse | [Rewrite doc page opening sentences for search and LLM discovery](https://github.com/ClickHouse/loom/pull/726) | merged |
-| [**FastNN**](https://github.com/CanReader/FastNN): neural-network library in Rust + CUDA | [Reject zero-length sequences in LSTM/GRU](https://github.com/CanReader/FastNN/pull/78) · [Assert fan_in > 0 in Kaiming/Xavier init](https://github.com/CanReader/FastNN/pull/77) | merged |
+| [**FastNN**](https://github.com/CanReader/FastNN): neural-network library in Rust + CUDA | [Stream safetensors save through BufWriter](https://github.com/CanReader/FastNN/pull/TBD) · [Reject zero-length sequences in LSTM/GRU](https://github.com/CanReader/FastNN/pull/78) · [Assert fan_in > 0 in Kaiming/Xavier init](https://github.com/CanReader/FastNN/pull/77) | in review / merged |
 | | [Atomic checkpoint writes](https://github.com/CanReader/FastNN/pull/74) · [Verify MNIST download integrity](https://github.com/CanReader/FastNN/pull/72) | merged |
 | [**jamjet**](https://github.com/jamjet-labs/jamjet): safety layer for AI agents | [Fix DimensionScores.composite() weight normalization](https://github.com/jamjet-labs/jamjet/pull/176) · [Add OTel span attributes](https://github.com/jamjet-labs/jamjet/pull/197) | merged |
 | [**forge-orchestrator**](https://github.com/nxtg-ai/forge-orchestrator): agent task orchestration | [Release orphaned locks for completed tasks](https://github.com/nxtg-ai/forge-orchestrator/pull/100) · [Fix companion plugin on re-run](https://github.com/nxtg-ai/forge-orchestrator/pull/106) | merged |
@@ -65,7 +65,7 @@ All links go to my own pull requests. 56+ merged across 30+ repositories.
 | [**grafana/dataViz**](https://github.com/grafana/dataViz): Grafana ECharts plugin monorepo | [Guard non-string config.src in getLayerSrc](https://github.com/grafana/dataViz/pull/201) · [Replace untracked plan file references](https://github.com/grafana/dataViz/pull/200) | in review |
 | [**grafana-pyroscope-datasource**](https://github.com/grafana/grafana-pyroscope-datasource) | [Fix multi-value template variable regex](https://github.com/grafana/grafana-pyroscope-datasource/pull/113) | in review |
 | [**screenpipe/screenpipe**](https://github.com/screenpipe/screenpipe): AI screen recording | [Raise read-pool acquire_timeout above busy_timeout](https://github.com/screenpipe/screenpipe/pull/7931) | merged |
-| [**getsentry/sentry-go**](https://github.com/getsentry/sentry-go): Sentry SDK for Go | [Add WithMechanism capture option](https://github.com/getsentry/sentry-go/pull/1472) | in review |
+| [**getsentry/sentry-go**](https://github.com/getsentry/sentry-go): Sentry SDK for Go | [Add WithMechanism capture option](https://github.com/getsentry/sentry-go/pull/1472) · [Add mechanism types to integration middlewares](https://github.com/getsentry/sentry-go/pull/1526) | in review |
 | [**lemma**](https://github.com/uselemma/lemma): LLM tracing | [Record handled LangChain tool errors as span errors](https://github.com/uselemma/lemma/pull/137) | in review |
 | [**oxtrace**](https://github.com/aashrith/oxtrace): LLM usage tracing | [Parse usage from gzip-encoded responses](https://github.com/aashrith/oxtrace/pull/23) | in review |
 | [**foundationforecast**](https://github.com/TimeCopilot/foundationforecast): time-series foundation models | [Forward futr_exog_list in detect_anomalies](https://github.com/TimeCopilot/foundationforecast/pull/82) | in review |
@@ -89,11 +89,16 @@ All links go to my own pull requests. 56+ merged across 30+ repositories.
 
 | Project | Contribution | Status |
 | :--- | :--- | :---: |
-| [**lacs-project/sysknife**](https://github.com/lacs-project/sysknife): Linux agent control standard | [Doctor continues past missing provider key](https://github.com/lacs-project/sysknife/pull/762) | in review |
-| [**eza-community/eza**](https://github.com/eza-community/eza): modern ls replacement | [Add EZA_SIZE_STYLE env var](https://github.com/eza-community/eza/pull/1981) | in review |
+| [**lacs-project/sysknife**](https://github.com/lacs-project/sysknife): Linux agent control standard | [Doctor continues past missing provider key](https://github.com/lacs-project/sysknife/pull/762) | merged |
+| [**uutils/findutils**](https://github.com/uutils/findutils): cross-platform find/xargs in Rust | [Seek stdin back past buffered bytes when -E stops early](https://github.com/uutils/findutils/pull/1018) | in review |
+| [**eza-community/eza**](https://github.com/eza-community/eza): modern ls replacement | [Handle all flag combinations in filter_child_files](https://github.com/eza-community/eza/pull/1988) · [Add EZA_SIZE_STYLE env var](https://github.com/eza-community/eza/pull/1981) | in review |
+| [**AlexSergey/rockpack**](https://github.com/AlexSergey/rockpack): React build framework | [Derive default html filename with path.parse](https://github.com/AlexSergey/rockpack/pull/123) | in review |
+| [**flisk-sh/md2html**](https://github.com/flisk-sh/md2html): Markdown to HTML converter | [Single-pass entity decode to prevent double-decoding](https://github.com/flisk-sh/md2html/pull/10) | in review |
+| [**openfabriq/openfabriq**](https://github.com/openfabriq/openfabriq): automation platform | [Use singular form in cronWords for */1 intervals](https://github.com/openfabriq/openfabriq/pull/59) | in review |
 | [**beancount-language-server**](https://github.com/polarmutex/beancount-language-server): LSP for Beancount | [Advertise positionEncoding capability (LSP 3.17)](https://github.com/polarmutex/beancount-language-server/pull/971) · [Fix exit code on unclean shutdown](https://github.com/polarmutex/beancount-language-server/pull/970) | merged |
 | [**tree-sitter-beancount**](https://github.com/polarmutex/tree-sitter-beancount): grammar | [Add injections.scm for BQL query highlighting](https://github.com/polarmutex/tree-sitter-beancount/pull/164) | in review |
 | [**metal2vk**](https://github.com/joshuaswarren/metal2vk): Metal-to-Vulkan translation | [Key pipeline variants by library/name/constants](https://github.com/joshuaswarren/metal2vk/pull/107) · [Reject inconsistent push/descriptor metadata](https://github.com/joshuaswarren/metal2vk/pull/106) | merged |
+| [**charmbracelet/vhs**](https://github.com/charmbracelet/vhs): CLI screen recorder to GIF/frames | [Apply styling to Output frames](https://github.com/charmbracelet/vhs/pull/TBD) | in review |
 | [**smolvm**](https://github.com/smol-machines/smolvm): lightweight VM manager | [Let a disk volume set its directory's owner and mode](https://github.com/smol-machines/smolvm/pull/2010) | in review |
 | [**mimas**](https://github.com/imlazyeye/mimas): GML parser in Rust | [Accept loop, while, for, if and match as binary operands](https://github.com/imlazyeye/mimas/pull/103) | merged |
 
